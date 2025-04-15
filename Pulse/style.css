@@ -1,0 +1,36 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar personalizado */
+  .navbar-brand,
+  .nav-link {
+    font-weight: bold;
+  }
+  
+  /* Estilos para los cards */
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Transiciones suaves para los enlaces */
+  .nav-link {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #ffd700;
+  }
+  
+  /* Efecto de scroll suave */
+  html {
+    scroll-behavior: smooth;
+  }
+  

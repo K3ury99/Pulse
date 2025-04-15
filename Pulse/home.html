@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE - Inicio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para la imagen de tecnología */
+    .tech-img {
+      display: block;
+      margin: 0 auto;
+      max-width: 50%;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    /* Clase para hacer visible la imagen tras la animación */
+    .tech-img.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PULSE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú horizontal -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mision">Misión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vision">Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#valores">Valores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <div class="container my-5">
+    <!-- Sección de introducción -->
+    <section id="intro" class="text-center mb-5" data-aos="fade-down">
+      <img src="img/1.jpg" class="img-fluid tech-img mb-4" alt="Imagen de Tecnología">
+      <h1 class="text-primary">Bienvenido a PULSE</h1>
+      <p class="lead">Innovación y tecnología al servicio del futuro. En PULSE transformamos ideas en soluciones tecnológicas de vanguardia.</p>
+    </section>
+    
+    <!-- Sección para la tarjeta de Misión -->
+    <section id="mision" class="mb-5" data-aos="fade-right">
+      <div class="card shadow">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Misión</h4>
+          <p class="card-text">Impulsar la transformación digital a través de soluciones innovadoras y tecnológicas que aportan valor a nuestros clientes y a la sociedad.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección para la tarjeta de Visión -->
+    <section id="vision" class="mb-5" data-aos="fade-up">
+      <div class="card shadow">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Visión</h4>
+          <p class="card-text">Ser líderes en el desarrollo de tecnología disruptiva y soluciones integradas, marcando tendencia en el mundo digital.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección para la tarjeta de Valores -->
+    <section id="valores" class="mb-5" data-aos="fade-left">
+      <div class="card shadow">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Valores</h4>
+          <ul class="list-unstyled">
+            <li><strong>Innovación</strong></li>
+            <li><strong>Compromiso</strong></li>
+            <li><strong>Integridad</strong></li>
+            <li><strong>Excelencia</strong></li>
+            <li><strong>Trabajo en equipo</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    // Efecto: al cargar la página se muestra la imagen con un fade in
+    window.addEventListener('load', function() {
+      const techImg = document.querySelector('.tech-img');
+      if(techImg){
+        techImg.classList.add('visible');
+      }
+    });
+  </script>
+</body>
+</html>
